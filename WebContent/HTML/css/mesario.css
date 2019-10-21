@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+header{
+	margin: 20px;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+form button{
+	margin: 5px;
+}
+
+input{
+	display: none;
+}

@@ -1,0 +1,22 @@
+#input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.candidato1 {
+    display: none;
+}
+
+.candidato2 {
+    display: none;
+}
+
+.candidato3 {
+    display: none;
+}
+
+.candidatoNone{
+    display: none;
+}
