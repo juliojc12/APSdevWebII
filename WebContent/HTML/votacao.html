@@ -20,19 +20,19 @@
     <div class="w3-row" id="input">
         <div class="w3-third w3-container w3-center">
             <form action="get" class="w3-center w3-container">
-                <input type="text" class="w3-input" placeholder="INFORME O NÚMERO DO CANDIDATO" style="margin-top: 15px;" autofocus> 
+                <input type="text" class="w3-input" placeholder="INFORME O NÚMERO DO CANDIDATO" style="margin-top: 15px;" autofocus>
             </form>
             <button type="button" class="w3-btn w3-teal" id="pesquisar-candidato" style="margin: 15px;">pesquisar</button>
         </div>
     </div>
-    
+
 
     <div class="main">
         <div class="w3-row candidatos w3-center">
             <div class="candidato1 w3-animate-top w3-center"
             style="margin-top: 60px;">
                 <img src="img/bolsonaro.jpeg" alt="bolsonaro"
-                style="width: 150px; 
+                style="width: 150px;
                 height: 150px;
                 border-radius: 50%">
                 <h3>Jair Messias Bolsonaro</h3>
@@ -43,7 +43,7 @@
                 <button class="w3-btn w3-green bolso"
                 style="margin-top: 15px"
                  onclick="document.getElementById('confirmarBolso').style.display='block'">Confirmar</button>
-				
+
 				<a href="votacao.html" style="text-decoration: none;">
                 <button class="w3-btn w3-red"
                 style="margin-top: 15px">Cancelar</button></a>
@@ -53,7 +53,7 @@
             <div class="candidato2 w3-animate-left"
             style="margin-top: 60px;">
                 <img src="img/hitler.jpeg" alt="Adolf hitler"
-                style="width: 150px; 
+                style="width: 150px;
                 height: 150px;
                 border-radius: 50%">
                 <h3>Adolf Hitler</h3>
@@ -64,7 +64,7 @@
                 <button class="w3-btn w3-green hitler"
                 style="margin-top: 15px"
                 onclick="document.getElementById('confirmarHitler').style.display='block'">Confirmar</button>
-				
+
 				<a href="votacao.html" style="text-decoration: none;">
                 <button class="w3-btn w3-red"
                 style="margin-top: 15px">Cancelar</button></a>
@@ -74,7 +74,7 @@
             <div class="candidato3 w3-animate-right"
             style="margin-top: 60px;">
                 <img src="img/kim1.jpg" alt="Kim Jong Un"
-                style="width: 150px; 
+                style="width: 150px;
                 height: 150px;
                 border-radius: 50%">
                 <h3>Kim Jong-Un</h3>
@@ -85,7 +85,7 @@
                 <button class="w3-btn w3-green kim"
                 onclick="document.getElementById('confirmarKim').style.display='block'"
                 style="margin-top: 15px">Confirmar</button>
-				
+
 				<a href="votacao.html" style="text-decoration: none;">
                 <button class="w3-btn w3-red"
                 style="margin-top: 15px">Cancelar</button></a>
@@ -96,7 +96,7 @@
             <div class="candidatoNone w3-animate-right"
             style="margin-top: 60px;">
                 <img src="img/nao.png" alt=""
-                style="width: 150px; 
+                style="width: 150px;
                 height: 150px;
                 border-radius: 50%">
                 <h3>Candidato inválido</h3>
@@ -106,7 +106,7 @@
 
                 <button class="w3-btn w3-green"
                 style="margin-top: 15px">Votar Nulo</button>
-				
+
 				<a href="votacao.html" style="text-decoration: none;">
                 <button class="w3-btn w3-red"
                 style="margin-top: 15px">Cancelar</button></a>
@@ -116,44 +116,38 @@
 
         <div id="confirmarBolso" class=" w3-center w3-modal w3-green">
             <div class="w3-content-modal w3-container">
-                <p>Deseja <strong>realmente</strong> votar em Jair <strong>MESSIAS</strong> Bolsonaro?</p>
+              <form class="w3-form" action="mesa.html" method="post">
+                <p>Voto <strong>Confirmado</strong> em Jair <strong>MESSIAS</strong> Bolsonaro</p>
                 <img src="img/bolso1.png" alt="Bolsonaro"
                 style="height: 200px; width: 200px; border-radius: 50%">
                 <p></p>
                 <button class="w3-btn w3-green">Confirmar</button>
-                <a href="./votacao.html" 
-                style="text-decoration: none;">
-                <button class="w3-btn w3-red">
-                Cancelar</button> </a>
-            </div>    
+              </form>
+            </div>
         </div>
 
         <div id="confirmarHitler" class=" w3-center w3-modal w3-teal">
             <div class="w3-content-modal w3-container">
-                <p>Deseja <strong>realmente</strong> votar em Adolf <strong>HILTER</strong>?</p>
+              <form class="w3-form" action="mesa.html" method="post">
+                <p>Voto <strong>Confirmado</strong> em Adolf <strong>HILTER</strong></p>
                 <img src="img/hitler1.jpeg" alt="Bolsonaro"
                 style="height: 200px; width: 200px; border-radius: 50%">
                 <p></p>
-                <button class="w3-btn w3-green">Confirmar</button>
-                <a href="./votacao.html" 
-                style="text-decoration: none;">
-                <button class="w3-btn w3-red">
-                Cancelar</button> </a>
-            </div>    
+                <button class="w3-btn w3-green">Voltar</button>
+              </form>
+            </div>
         </div>
 
         <div id="confirmarKim" class=" w3-center w3-modal w3-pink">
             <div class="w3-content-modal w3-container">
-                <p>Deseja <strong>realmente</strong> votar em Kim <strong>Jong-un</strong>?</p>
+              <form class="w3-form" action="mesa.html" method="post">
+                <p>Voto <strong>confirmado</strong> em Kim <strong>Jong-un</strong></p>
                 <img src="img/kim.jpg" alt="Bolsonaro"
                 style="height: 200px; width: 200px; border-radius: 50%">
                 <p></p>
                 <button class="w3-btn w3-green">Confirmar</button>
-                <a href="./votacao.html" 
-                style="text-decoration: none;">
-                <button class="w3-btn w3-red">
-                Cancelar</button> </a>
-            </div>    
+              </form>
+            </div>
         </div>
     </div>
 
