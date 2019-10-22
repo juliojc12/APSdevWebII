@@ -14,35 +14,77 @@ font-family: 'Baloo Bhai', cursive;">
 
   <button style="background: #7159c1;color:#fff;border-radius: 10px;"
   class="w3-button w3-large"
-  onclick="document.getElementById('id02).style.display='block'"> Gerar Relatório </button>
-  
+  onclick="document.getElementById('id02').style.display='block'"> Gerar Relatório </button>
+
   <div id="id02" class="w3-modal">
-  
+
     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
       <div class="w3-center"><br>
         <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
       </div>
 
-      <form class="w3-container">
+      <!--form class="w3-container">
         <div class="w3-section">
           <label><strong>Jair Messias Bolsonaro:</strong></label>
           <div class="w3-border">
   		  	 <div class="w3-grey" style="height:24px;width:20%"></div>
   		    </div>
   		  </div>
-	    </form>	
+	    </form -->
+			<div class="w3-container">
 
-      <div class=" w3-border-top w3-padding-16">
-        <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-red">Cancelar
-        </button> 
-      </div>   
-    </div>
-  </div>
+
+				<div class="w3-light-grey w3-border">
+					<div class="w3-section">
+						<img src="img/bolsonaro.jpeg" alt="bolsonaro"
+						style="width: 250px;
+						height: 150px;
+						border-radius: 50%">
+						<label><strong>Jair Messias Bolsonaro</strong></label>
+					</div>
+					<div class="w3-container w3-red w3-center" style="width: 25%">
+						25%
+					</div>
+				</div>
+
+				<div class="w3-light-grey w3-border">
+					<div class="w3-section">
+						<img src="img/kim.jpg" alt="Kim Jong Un"
+						style="width: 150px;
+						height: 150px;
+						border-radius: 50%">
+						<label><strong>Kim Jung-Un</strong></label>
+					</div>
+					<div class="w3-container w3-green w3-center" style="width: 45%">
+						45%
+					</div>
+				</div>
+
+				<div class="w3-light-grey w3-border">
+					<div class="w3-section">
+						<img src="img/hitler.jpeg" alt="Adolf hitler"
+						style="width: 150px;
+						height: 150px;
+						border-radius: 50%">
+						<label><strong>Adolf Hitler</strong></label>
+					</div>
+					<div class="w3-container w3-green w3-center" style="width: 15%">
+						15%
+					</div>
+				</div>
+
+	      <div class=" w3-border-top w3-padding-16">
+	        <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-red">Fechar
+	        </button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 
   <div id="id01" class="w3-modal">
-  
+
     <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
       <div class="w3-center"><br>
@@ -71,12 +113,12 @@ font-family: 'Baloo Bhai', cursive;">
 
 	  	</div>
 	        <button class="w3-button w3-block w3-section w3-padding" type="submit" style="background: #7159c1; color:#fff; border-radius: 10px;">Confirmar</button>
-      
+
       </form>
 
       <div class=" w3-border-top w3-padding-16">
         <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancelar
-        </button> 
+        </button>
       </div>
 
     </div>
